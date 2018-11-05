@@ -1,0 +1,82 @@
+.ml-wrapper {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+}
+
+.ml-wrapper h3 {
+  font-family: Montserrat;
+  font-size: 19px;
+  padding: 5px 20px 0;
+  color: #2193bd;
+}
+
+.ml-wrapper ul {
+  padding: 0;
+  margin: 20px 0 0;
+  list-style-type: none;
+  border-top: 1px solid #eaeaea;
+}
+
+.conversation {
+  border-bottom: 1px solid #eaeaea;
+  padding: 12px 20px;
+  font-family: HelveticaNeue;
+  display: flex;
+  align-items: center;
+  transition: all ease 0.2s;
+}
+
+.conversation:hover {
+  background: #fbfbfb;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.conversation.active {
+  color: #fff;
+  background: #1d86c2;
+}
+
+.conversation.active .c-status {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.conversation.active .c-avatar {
+  background: #ffffff;
+  color: #929292;
+}
+
+.conversation:last-child {
+  border-bottom: none;
+  padding-bottom: 15px;
+}
+
+.c-avatar {
+  height: 42px;
+  width: 42px;
+  background: #d2d2d2;
+  margin-right: 15px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.c-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.c-status {
+  color: gray;
+  font-size: 14px;
+  transition: all ease 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .c-meta {
+    display: none;
+  }
+}

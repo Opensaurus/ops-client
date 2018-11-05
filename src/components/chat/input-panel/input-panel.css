@@ -1,0 +1,45 @@
+#input-panel {
+  padding: 20px 0 30px;
+  margin: 0 30px;
+  border-top: 1px solid #f1eded;
+}
+
+#input-panel form {
+  display: flex;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  margin-right: 30px;
+}
+
+.message-input:focus {
+  outline: none;
+}
+
+.send-button {
+  color: white;
+  background: #1c87c1;
+  font-family: Montserrat;
+  padding: 15px 30px 15px 25px;
+  border-radius: 25px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.send-button::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f1d8';
+  margin-right: 10px;
+}
+
+.send-button:hover,
+.send-bottom:focus {
+  outline: none;
+  background: #176f9e;
+}

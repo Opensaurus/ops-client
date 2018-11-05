@@ -1,0 +1,6 @@
+#chat {
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+  grid-column-gap: 20px;
+  height: 100%;
+}

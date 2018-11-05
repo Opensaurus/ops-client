@@ -1,0 +1,74 @@
+.navbar {
+  width: 100%;
+  background: linear-gradient(to right, #1675c7 0%, #2aafb5 100%);
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.menu-right li {
+  margin: 0 20px;
+  font-family: Montserrat;
+  font-size: 0.9em;
+}
+
+.menu-right li a {
+  color: #fff;
+}
+
+.menu-right i {
+  margin-right: 10px;
+}
+
+.login-btn {
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  color: #fff;
+}
+
+.logo {
+  padding: 0 40px;
+}
+
+.logo img {
+  height: 35px;
+  margin-top: 2px;
+  width: auto;
+}
+
+.current-user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .current-user {
+    display: none;
+  }
+
+  .login-btn {
+    border: none;
+    padding: 0;
+  }
+}
+
+.user-school {
+  opacity: 0.7;
+  margin-top: 2px;
+  margin-left: 24px;
+}
