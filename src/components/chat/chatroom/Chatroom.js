@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import InputPanel from '../input-panel/InputPanel';
+import ChatInput from '../input/ChatInput';
 import Message from '../message/Message';
-import './chatroom.css';
+import './Chatroom.css';
 
 class Chatroom extends Component {
   render() {
@@ -13,7 +13,7 @@ class Chatroom extends Component {
         <div className="chat-window">
           <Message />
         </div>
-        <InputPanel />
+        <ChatInput />
       </div>
     );
   }

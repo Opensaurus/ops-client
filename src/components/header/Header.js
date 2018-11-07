@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SubNav from './SubNav';
-import logo from '../../assets/gep-logo.svg';
+import SubNav from './subnav/SubNav';
 
-import './header.css';
+import './Header.css';
 
 class Header extends Component {
   render() {
@@ -11,9 +10,7 @@ class Header extends Component {
       <header>
         <nav className="navbar">
           <Link to="/">
-            <div className="logo">
-              <img src={logo} alt="geppetto-logo" />
-            </div>
+            <div className="logo">OpenSaurus</div>
           </Link>
 
           <ul className="menu-right">
@@ -22,9 +19,9 @@ class Header extends Component {
                 <div>
                   <div className="user-name">
                     <i className="fa fa-user-circle" aria-hidden="true" />
-                    {this.props.auth.name.first} {this.props.auth.name.last}
+                    First Last
                   </div>
-                  <div className="user-school">{this.props.auth.role}</div>
+                  <div className="user-school">Admin</div>
                 </div>
               </Link>
             </li>

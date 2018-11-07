@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import './login.css';
-import logo from '../../assets/gep-logo.svg';
+import './Login.css';
 
 class Login extends Component {
   determineAuth() {
@@ -12,7 +11,7 @@ class Login extends Component {
           <div className="login-container">
             <div className="login-box">
               <div className="login-content">
-                <img src={logo} alt="geppetto-logo" />
+                <h2>OpenSaurus</h2>
                 <p>Sign In or Create Account</p>
                 <a className="google-btn" href="/auth/google">
                   <i className="fab fa-google" aria-hidden="true" />

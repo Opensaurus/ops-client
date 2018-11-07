@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './message-list.css';
+import './Message-list.css';
 
 class MessageList extends Component {
   renderConversations() {

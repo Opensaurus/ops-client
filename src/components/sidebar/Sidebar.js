@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Contractor, Admin } from './menu-items';
+import { Contractor, Admin } from './menu/menu-items';
 
-import './sidebar.css';
+import './Sidebar.css';
 
 class Sidebar extends Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './message.css';
+import './Message.css';
 
 class Message extends Component {
   render() {

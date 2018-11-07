@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './dashboard.css';
+import './Dashboard.css';
 
 class Dashboard extends Component {
   render() {

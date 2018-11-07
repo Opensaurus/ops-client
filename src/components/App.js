@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
+import './App.css';
 import 'normalize.css';
 
 import Header from './header/Header';
@@ -12,31 +13,18 @@ import Chat from './chat/Chat';
 import Register from './register/Register';
 
 class App extends Component {
-  componentDidMount() {
-    this.props.fetchUser();
-  }
+  // componentDidMount() {
+  //   this.props.fetchUser();
+  // }
 
   render() {
-    const { auth } = this.props;
-
-    // Unprotected Routes
-    if (!auth) {
-      return (
-        <Router>
-          <div className="react-container">
-            <Route exact path="/" render={() => <Redirect to="/login" />} />
-            <Route path="/register" component={Register} />
-            <Route path="/login" component={Login} />
-          </div>
-        </Router>
-      );
-    }
+    // const { auth } = this.props;
 
     // Authenticated Routes
     return (
       <Router>
         <div className="react-container">
-          <Header auth={auth} />
+          <Header />
           <div id="content-wrapper">
             <Sidebar />
             <div className="main-content">
@@ -55,8 +43,10 @@ class App extends Component {
   }
 }
 
-function mapStateToProps({ auth }) {
-  return { auth };
-}
+// function mapStateToProps({ auth }) {
+//   return { auth };
+// }
+//
+// export default connect(mapStateToProps, actions)(App);
 
-export default connect(mapStateToProps, actions)(App);
+export default App;

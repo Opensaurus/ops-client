@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './input-panel.css';
+import './Chat-input.css';
 
-class InputPanel extends Component {
+class ChatInput extends Component {
   constructor(props) {
     super(props);
     this.state = { value: '' };
@@ -39,4 +39,4 @@ class InputPanel extends Component {
   }
 }
 
-export default InputPanel;
+export default ChatInput;
